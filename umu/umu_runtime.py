@@ -531,6 +531,8 @@ if platform.machine() == "x86_64":  # noqa: SIM114
     pass
 elif platform.machine() == "aarch64":
     pass
+elif platform.machine() == "loongarch64":
+    pass
 else:
     err: str = f"Unsupported platform {platform.machine()}"
     raise RuntimeError(err)
